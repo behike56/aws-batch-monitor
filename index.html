@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AWS Batch Status</title>
+  </head>
+  <body>
+    <h1>AWS Batch Status</h1>
+    <label>ジョブID: <input type="text" id="job-id"></label>
+    <button id="refresh-button">更新</button>
+    <p>ジョブの状態: <span id="job-status"></span></p>
+    <script type="module">
+      import init, { main_js } from './static/wasm.js';
+
+      async function run() {
+        await init();
+        main_js();
+      }
+
+      run();
+    </script>
+  </body>
+</html>

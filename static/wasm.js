@@ -1,0 +1,1 @@
+import { main_js } from '../pkg/aws_batch_status.js';
